@@ -36,7 +36,8 @@ public class UserServiceImpl implements UserService {
 		return userMapper.queryUerInfo(account,password);
 	}
 	
-	private UserInfo findByAccount(String account){
+	@Override
+	public UserInfo findByAccount(String account){
 		return userMapper.findByAccount(account);
 	}
 

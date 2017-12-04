@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableAutoConfiguration
-@ComponentScan(basePackages={"com.lawyer.manage"}) 
+@ComponentScan(basePackages={"com.lawyer"}) 
 //@MapperScan("com.lawyer.manage")
 public class WebApplication extends SpringBootServletInitializer {
     @Override
