@@ -137,7 +137,7 @@ public class ShiroConfig {
 	   public EhCacheManager ehCacheManager(){  
 	      System.out.println("ShiroConfiguration.getEhCacheManager()");  
 	      EhCacheManager cacheManager = new EhCacheManager();  
-	      cacheManager.setCacheManagerConfigFile("classpath:config/ehcache-shiro.xml");  
+	      cacheManager.setCacheManagerConfigFile("classpath:ehcache-shiro.xml");  
 	      return cacheManager;  
 	  
 	   }  

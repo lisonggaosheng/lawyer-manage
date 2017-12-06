@@ -19,6 +19,7 @@ import org.springframework.stereotype.Component;
 
 import com.lawyer.manage.system.domain.UserInfo;
 import com.lawyer.manage.system.service.UserService;
+import com.lawyer.util.MD5Util;
 
 /**
  * 验证用户登录
@@ -56,13 +57,8 @@ public class UserRealm extends AuthorizingRealm {
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
 		System.out.println("###【开始认证[SessionId]】"+SecurityUtils.getSubject().getSession().getId());
 		
-		//获取用户的输入的账号.
-//	    String loginAcount = (String)token.getPrincipal();
-//		UserInfo userInfo = userService.findByAccount(loginAcount);
-	    
 	    UsernamePasswordToken upt = (UsernamePasswordToken) token;
 		String loginAcount = upt.getUsername();
-//		String password = String.valueOf(upt.getPassword()) ;
 		UserInfo userInfo = userService.findByAccount(loginAcount);
 		if (userInfo == null) {
 			throw new AccountException("帐号或密码不正确！");
@@ -70,8 +66,9 @@ public class UserRealm extends AuthorizingRealm {
 		if(userInfo.getStatus() != 0){
 			throw new DisabledAccountException("帐号已经禁止登录，请联系管理员！");
 		}
+		System.out.println("DB中密码:"+MD5Util.gerHsahMd5(userInfo.getPassword()));
+		SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(userInfo, MD5Util.gerHsahMd5(userInfo.getPassword()), getName());
 		
-		SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(userInfo, userInfo.getPassword(), getName());
 		return authenticationInfo;
 	}
 }

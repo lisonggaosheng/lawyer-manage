@@ -4,16 +4,12 @@ import java.util.List;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import com.lawyer.manage.system.dao.UserMapper;
-import com.lawyer.manage.system.domain.MenuInfo;
 import com.lawyer.manage.system.domain.UserInfo;
-import com.lawyer.manage.system.enums.MenuTypeEnum;
-import com.lawyer.manage.system.service.MenuService;
 import com.lawyer.manage.system.service.UserService;
 
 @Service
