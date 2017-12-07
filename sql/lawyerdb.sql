@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50720
 File Encoding         : 65001
 
-Date: 2017-12-01 18:59:41
+Date: 2017-12-07 13:49:25
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -31,11 +31,15 @@ CREATE TABLE `sys_menu_function` (
   `create_time` datetime DEFAULT NULL COMMENT '创建时间',
   `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '时间截',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='菜单功能表';
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='菜单功能表';
 
 -- ----------------------------
 -- Records of sys_menu_function
 -- ----------------------------
+INSERT INTO `sys_menu_function` VALUES ('1', '0', '系统管理', '1', '0', null, null, null, null, '2017-12-04 09:39:14');
+INSERT INTO `sys_menu_function` VALUES ('2', '1', '用户管理', '2', '0', null, null, null, null, '2017-12-04 09:39:29');
+INSERT INTO `sys_menu_function` VALUES ('3', '1', '角色管理', '2', '0', null, null, null, null, '2017-12-04 09:39:40');
+INSERT INTO `sys_menu_function` VALUES ('4', '1', '菜单管理', '2', '0', null, null, null, null, '2017-12-04 09:39:50');
 
 -- ----------------------------
 -- Table structure for sys_role
@@ -68,11 +72,14 @@ CREATE TABLE `sys_role_menu` (
   `create_time` datetime DEFAULT NULL COMMENT '创建时间',
   `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '时间截',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='角色菜单权限关系表';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='角色菜单权限关系表';
 
 -- ----------------------------
 -- Records of sys_role_menu
 -- ----------------------------
+INSERT INTO `sys_role_menu` VALUES ('1', '1', '1', null, null, '2017-12-04 10:25:13');
+INSERT INTO `sys_role_menu` VALUES ('2', '2', '1', null, null, '2017-12-04 10:25:19');
+INSERT INTO `sys_role_menu` VALUES ('3', '3', '1', null, null, '2017-12-04 10:25:24');
 
 -- ----------------------------
 -- Table structure for sys_user
@@ -100,7 +107,7 @@ CREATE TABLE `sys_user` (
 -- ----------------------------
 -- Records of sys_user
 -- ----------------------------
-INSERT INTO `sys_user` VALUES ('1', 'admin', 'admin', '管理员', null, null, null, '0', null, null, '0', null, null, null, '2017-11-28 14:37:46');
+INSERT INTO `sys_user` VALUES ('1', 'admin', 'e10adc3949ba59abbe56e057f20f883e', '管理员', null, null, null, '0', null, null, '0', null, null, null, '2017-12-06 11:54:29');
 
 -- ----------------------------
 -- Table structure for sys_user_role
