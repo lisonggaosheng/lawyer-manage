@@ -14,6 +14,14 @@ public interface UserService {
 	 * @return
 	 */
 	UserInfo queryUerInfo(String account,String password);
+	
+	/**
+	 * 获取用户信息
+	 * @param account  登录账号
+	 * @param password  登录密码
+	 * @return
+	 */
+	UserInfo findByAccount(String account);
 
 	/**
 	 * 获取资源集合
