@@ -1,88 +1,234 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
 	xmlns:shiro="http://www.pollix.at/thymeleaf/shiro" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-<head>
-<meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Login</title>
+	<head>
+		<meta charset="utf-8" />
+		<title>债转管理系统</title>
+		<meta name="keywords" content="债转管理系统" />
+		<meta name="description" content="债转管理系统" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Bootstrap -->
-<link rel="stylesheet" th:href="@{/base/css/bootstrap.min.css}" />
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<style type="text/css">
-body {
-	padding-top: 40px;
-	padding-bottom: 40px;
-	background-color: #eee;
-}
+		<!-- basic styles -->
+		<link th:href="@{/assets/css/bootstrap.min.css}" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" th:href="@{/assets/css/font-awesome.min.css}" type="text/css"/>
+		<link rel="stylesheet" th:href="@{/assets/css/cyrillic.css}" type="text/css"/>
 
-.form-signin {
-	max-width: 330px;
-	padding: 15px;
-	margin: 0 auto;
-}
+		<link rel="stylesheet" th:href="@{/assets/css/ace.min.css}" type="text/css"/>
+		<link rel="stylesheet" th:href="@{/assets/css/ace-rtl.min.css}" type="text/css"/>
+	</head>
 
-.form-signin .form-signin-heading, .form-signin .checkbox {
-	margin-bottom: 10px;
-}
+	<body class="login-layout">
+		<div class="main-container">
+			<div class="main-content">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="login-container">
+							<div class="center">
+								<h1>
+									<i class="icon-leaf green"></i>
+									<span class="red"></span>
+									<span class="white">债转管理系统</span>
+								</h1>
+								<h4 class="blue">&copy; 理颂高盛</h4>
+							</div>
 
-.form-signin .checkbox {
-	font-weight: normal;
-}
+							<div class="space-6"></div>
 
-.form-signin .form-control {
-	position: relative;
-	height: auto;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 10px;
-	font-size: 16px;
-}
+							<div class="position-relative">
+								<div id="login-box" class="login-box visible widget-box no-border">
+									<div class="widget-body">
+										<div class="widget-main">
+											<h4 class="header blue lighter bigger">
+												<i class="icon-coffee green"></i>
+												请输入用户名和密码
+											</h4>
+											<div class="space-6"></div>
+											<form th:action="@{/login}" method="post">
+												<fieldset>
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="text" class="form-control" placeholder="用户名" name="account"/>
+															<i class="icon-user"></i>
+														</span>
+													</label>
 
-.form-signin .form-control:focus {
-	z-index: 2;
-}
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="password" class="form-control" placeholder="密码" name="password"/>
+															<i class="icon-lock"></i>
+														</span>
+													</label>
+													<div class="space"></div>
+													<div class="clearfix">
+														<label class="inline">
+															<input type="checkbox" style="display:none"/>
+															<span class="lbl"> </span>
+														</label>
 
-.form-signin input[type="email"] {
-	margin-bottom: -1px;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-}
+														<button type="submit" class="width-35 pull-right btn btn-sm btn-primary">
+															<i class="icon-key"></i>
+															登陆
+														</button>
+													</div>
 
-.form-signin input[type="password"] {
-	margin-bottom: 10px;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-}
-</style>
-</head>
-<body>
-	<div class="container">
-		<form class="form-signin" th:action="@{/login}" method="post">
-			<h2 class="form-signin-heading">Please sign in</h2>
-			<label for="inputEmail" class="sr-only">Account</label> 
-			<input type="text" id="inputEmail" class="form-control required autofocus" placeholder="Account" name="account"/> 
-			<label for="inputPassword" class="sr-only">Password</label>
-			<input type="password" id="inputPassword" class="form-control required" placeholder="Password" name="password"/>
-			<div class="checkbox">
-				<label> 
-					<input type="checkbox" value="remember-me"/> Remember me
-				</label>
+													<div class="space-4"></div>
+												</fieldset>
+											</form>
+
+											
+										</div><!-- /widget-main -->
+
+										<div class="toolbar clearfix">
+											<div>
+												<!-- 
+												<a href="#" onclick="show_box('forgot-box'); return false;" class="forgot-password-link">
+													<i class="icon-arrow-left"></i>
+													忘记密码？
+												</a>
+												 -->
+											</div>
+
+											<div>
+												<!-- 
+												<a href="#" onclick="show_box('signup-box'); return false;" class="user-signup-link">
+													注册
+													<i class="icon-arrow-right"></i>
+												</a>
+												 -->
+											</div>
+										</div>
+									</div><!-- /widget-body -->
+								</div><!-- /login-box -->
+
+								<div id="forgot-box" class="forgot-box widget-box no-border">
+									<div class="widget-body">
+										<div class="widget-main">
+											<h4 class="header red lighter bigger">
+												<i class="icon-key"></i>
+												Retrieve Password
+											</h4>
+
+											<div class="space-6"></div>
+											<p>
+												Enter your email and to receive instructions
+											</p>
+
+											<form>
+												<fieldset>
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="email" class="form-control" placeholder="Email" />
+															<i class="icon-envelope"></i>
+														</span>
+													</label>
+
+													<div class="clearfix">
+														<button type="button" class="width-35 pull-right btn btn-sm btn-danger">
+															<i class="icon-lightbulb"></i>
+															Send Me!
+														</button>
+													</div>
+												</fieldset>
+											</form>
+										</div><!-- /widget-main -->
+
+										<div class="toolbar center">
+											<a href="#" onclick="show_box('login-box'); return false;" class="back-to-login-link">
+												Back to login
+												<i class="icon-arrow-right"></i>
+											</a>
+										</div>
+									</div><!-- /widget-body -->
+								</div><!-- /forgot-box -->
+
+								<div id="signup-box" class="signup-box widget-box no-border">
+									<div class="widget-body">
+										<div class="widget-main">
+											<h4 class="header green lighter bigger">
+												<i class="icon-group blue"></i>
+												New User Registration
+											</h4>
+
+											<div class="space-6"></div>
+											<p> Enter your details to begin: </p>
+
+											<form>
+												<fieldset>
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="email" class="form-control" placeholder="Email" />
+															<i class="icon-envelope"></i>
+														</span>
+													</label>
+
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="text" class="form-control" placeholder="Username" />
+															<i class="icon-user"></i>
+														</span>
+													</label>
+
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="password" class="form-control" placeholder="Password" />
+															<i class="icon-lock"></i>
+														</span>
+													</label>
+
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="password" class="form-control" placeholder="Repeat password" />
+															<i class="icon-retweet"></i>
+														</span>
+													</label>
+
+													<label class="block">
+														<input type="checkbox" class="ace" />
+														<span class="lbl">
+															I accept the
+															<a href="#">User Agreement</a>
+														</span>
+													</label>
+
+													<div class="space-24"></div>
+
+													<div class="clearfix">
+														<button type="reset" class="width-30 pull-left btn btn-sm">
+															<i class="icon-refresh"></i>
+															Reset
+														</button>
+
+														<button type="button" class="width-65 pull-right btn btn-sm btn-success">
+															Register
+															<i class="icon-arrow-right icon-on-right"></i>
+														</button>
+													</div>
+												</fieldset>
+											</form>
+										</div>
+
+										<div class="toolbar center">
+											<a href="#" onclick="show_box('login-box'); return false;" class="back-to-login-link">
+												<i class="icon-arrow-left"></i>
+												Back to login
+											</a>
+										</div>
+									</div><!-- /widget-body -->
+								</div><!-- /signup-box -->
+							</div><!-- /position-relative -->
+						</div>
+					</div><!-- /.col -->
+				</div><!-- /.row -->
 			</div>
-			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-		</form>
-		<p th:text="${errorText}" ></p>
-	</div>
+		</div><!-- /.main-container -->
 
-	<script th:src="@{/base/js/jquery.min.js}"></script>
-	<script th:src="@{/base/js/bootstrap.min.js}"></script>
-	<script th:src="@{/layer/layer.js}"></script>
+		<script th:src="@{/assets\js\jquery-2.0.3.min.js}"></script>
+		<script th:src="@{/assets/js/jquery.mobile.custom.min.js}"></script>
+		<script type="text/javascript">
+			function show_box(id) {
+			 jQuery('.widget-box.visible').removeClass('visible');
+			 jQuery('#'+id).addClass('visible');
+			}
+		</script>
 </body>
 </html>
