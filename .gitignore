@@ -1,0 +1,8 @@
+[core]
+autocrlf = false
+
+/.settings
+/target/
+/.classpath
+/.gitignore
+/.project
