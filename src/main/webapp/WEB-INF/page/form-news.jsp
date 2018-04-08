@@ -1,3 +1,4 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <!doctype html>
 <html>
 
@@ -16,10 +17,9 @@
     <link rel="stylesheet" href="assets/css/amazeui.min.css" />
     <link rel="stylesheet" href="assets/css/admin.css">
     <link rel="stylesheet" href="assets/css/app.css">
-    <script src="assets/js/echarts.min.js"></script>
 </head>
 
-<body data-type="chart">
+<body data-type="generalComponents">
 
 
     <header class="am-topbar am-topbar-inverse admin-header">
@@ -160,13 +160,13 @@
             <div class="tpl-left-nav-list">
                 <ul class="tpl-left-nav-menu">
                     <li class="tpl-left-nav-item">
-                        <a href="index.html" class="nav-link">
+                        <a href="index.html" class="nav-link active">
                             <i class="am-icon-home"></i>
                             <span>首页</span>
                         </a>
                     </li>
                     <li class="tpl-left-nav-item">
-                        <a href="chart.html" class="nav-link tpl-left-nav-link-list active">
+                        <a href="chart.html" class="nav-link tpl-left-nav-link-list">
                             <i class="am-icon-bar-chart"></i>
                             <span>数据表</span>
                             <i class="tpl-left-nav-content tpl-badge-danger">
@@ -176,13 +176,16 @@
                     </li>
 
                     <li class="tpl-left-nav-item">
-                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                        <!-- 打开状态 a 标签添加 active 即可   -->
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list active">
                             <i class="am-icon-table"></i>
                             <span>表格</span>
-                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                            <!-- 列表打开状态的i标签添加 tpl-left-nav-more-ico-rotate 图表即90°旋转  -->
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
                         </a>
-                        <ul class="tpl-left-nav-sub-menu">
+                        <ul class="tpl-left-nav-sub-menu" style="display:block">
                             <li>
+
                                 <a href="table-font-list.html">
                                     <i class="am-icon-angle-right"></i>
                                     <span>文字表格</span>
@@ -195,8 +198,8 @@
                                     <i class="tpl-left-nav-content tpl-badge-success">
                18
              </i>
-
-                                    <a href="form-news.html">
+                                    <!-- 打开状态 a 标签添加 active 即可   -->
+                                    <a href="form-news.html" class="active">
                                         <i class="am-icon-angle-right"></i>
                                         <span>消息列表</span>
                                         <i class="tpl-left-nav-content tpl-badge-primary">
@@ -249,7 +252,6 @@
 
 
 
-
         <div class="tpl-content-wrapper">
             <div class="tpl-content-page-title">
                 Amaze UI 表单
@@ -262,7 +264,7 @@
             <div class="tpl-portlet-components">
                 <div class="portlet-title">
                     <div class="caption font-green bold">
-                        <span class="am-icon-code"></span> 折线图
+                        <span class="am-icon-code"></span> 表单
                     </div>
                     <div class="tpl-portlet-input tpl-fz-ml">
                         <div class="portlet-input input-small input-inline">
@@ -309,28 +311,105 @@
                         </div>
                     </div>
 
+                    <ul class="tpl-task-list tpl-task-remind">
+                        <li>
+                            <div class="cosB">
+                                12分钟前
+                            </div>
+                            <div class="cosA">
+                                <span class="cosIco">
+                        <i class="am-icon-bell-o"></i>
+                      </span>
 
-                    <!--此部分数据请在 js文件夹下中的 app.js 中的 “百度图表A” 处修改数据 插件使用的是 百度echarts-->
-                    <div class="tpl-echarts tpl-chart-mb" id="tpl-echarts-A">
+                                <span> 注意：Chrome 和 Firefox 下， display: inline-block; 或 display: block; 的元素才会应用旋转动画。<span class="tpl-label-info"> 提取文件
+                                                            <i class="am-icon-share"></i>
+                                                        </span></span>
+                            </div>
 
-                    </div>
-                    <div class="portlet-title">
-                        <div class="caption font-green bold">
-                            <span class="am-icon-code"></span> 雷达图
-                        </div>
-                    </div>
-                    <div class="tpl-echarts tpl-chart-mb" id="tpl-echarts-B">
+                        </li>
+                        <li>
+                            <div class="cosB">
+                                36分钟前
+                            </div>
+                            <div class="cosA">
+                                <span class="cosIco label-danger">
+                        <i class="am-icon-bolt"></i>
+                      </span>
 
-                    </div>
+                                <span> FontAwesome 在绘制图标的时候不同图标宽度有差异， 添加 .am-icon-fw 将图标设置为固定的宽度，解决宽度不一致问题（v2.3 新增）。</span>
+                            </div>
 
-                    <div class="portlet-title">
-                        <div class="caption font-green bold">
-                            <span class="am-icon-code"></span> 折线柱图
-                        </div>
-                    </div>
-                    <div class="tpl-echarts tpl-chart-mb" id="tpl-echarts-C">
+                        </li>
 
-                    </div>
+                        <li>
+                            <div class="cosB">
+                                2小时前
+                            </div>
+                            <div class="cosA">
+                                <span class="cosIco label-info">
+                        <i class="am-icon-bullhorn"></i>
+                      </span>
+
+                                <span> 使用 flexbox 实现，只兼容 IE 10+ 及其他现代浏览器。</span>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="cosB">
+                                1天前
+                            </div>
+                            <div class="cosA">
+                                <span class="cosIco label-warning">
+                        <i class="am-icon-plus"></i>
+                      </span>
+
+                                <span> 部分用户反应在过长的 Tabs 中滚动页面时会意外触发 Tab 切换事件，用户可以选择禁用触控操作。</span>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="cosB">
+                                12分钟前
+                            </div>
+                            <div class="cosA">
+                                <span class="cosIco">
+                        <i class="am-icon-bell-o"></i>
+                      </span>
+
+                                <span> 注意：Chrome 和 Firefox 下， display: inline-block; 或 display: block; 的元素才会应用旋转动画。<span class="tpl-label-info"> 提取文件
+                                                            <i class="am-icon-share"></i>
+                                                        </span></span>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="cosB">
+                                36分钟前
+                            </div>
+                            <div class="cosA">
+                                <span class="cosIco label-danger">
+                        <i class="am-icon-bolt"></i>
+                      </span>
+
+                                <span> FontAwesome 在绘制图标的时候不同图标宽度有差异， 添加 .am-icon-fw 将图标设置为固定的宽度，解决宽度不一致问题（v2.3 新增）。</span>
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <div class="cosB">
+                                2小时前
+                            </div>
+                            <div class="cosA">
+                                <span class="cosIco label-info">
+                        <i class="am-icon-bullhorn"></i>
+                      </span>
+
+                                <span> 使用 flexbox 实现，只兼容 IE 10+ 及其他现代浏览器。</span>
+                            </div>
+
+                        </li>
+                    </ul>
                 </div>
 
             </div>

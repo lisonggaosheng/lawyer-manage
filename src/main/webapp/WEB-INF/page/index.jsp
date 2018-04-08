@@ -1,21 +1,22 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <!doctype html>
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Amaze UI Admin index Examples</title>
-    <meta name="description" content="这是一个 index 页面" />
-    <meta name="keywords" content="index" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="renderer" content="webkit" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>首页123</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="assets/i/favicon.png" />
-    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png" />
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
     <link rel="stylesheet" href="assets/css/amazeui.min.css" />
-    <link rel="stylesheet" href="assets/css/admin.css" />
-    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/app.css">
     <script src="assets/js/echarts.min.js"></script>
 </head>
 
@@ -25,7 +26,7 @@
     <header class="am-topbar am-topbar-inverse admin-header">
         <div class="am-topbar-brand">
             <a href="javascript:;" class="tpl-logo">
-                <img src="assets/img/logo.png" alt="" />
+                <img src="assets/img/logo.png" alt="">
             </a>
         </div>
         <div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right">
@@ -37,9 +38,9 @@
         <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
 
             <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
-                <li class="am-dropdown data-am-dropdown data-am-dropdown-toggle" >
+                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                     <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                        <span class="am-icon-bell-o"></span> 提醒 <span class="am-badge tpl-badge-success am-round">5</span>
+                        <span class="am-icon-bell-o"></span> 提醒 <span class="am-badge tpl-badge-success am-round">5</span></span>
                     </a>
                     <ul class="am-dropdown-content tpl-dropdown-content">
                         <li class="tpl-dropdown-content-external">
@@ -55,9 +56,9 @@
                         </li>
                     </ul>
                 </li>
-                <li class="am-dropdown data-am-dropdown data-am-dropdown-toggle">
+                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                     <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                        <span class="am-icon-comment-o"></span> 消息 <span class="am-badge tpl-badge-danger am-round">9</span>
+                        <span class="am-icon-comment-o"></span> 消息 <span class="am-badge tpl-badge-danger am-round">9</span></span>
                     </a>
                     <ul class="am-dropdown-content tpl-dropdown-content">
                         <li class="tpl-dropdown-content-external">
@@ -65,7 +66,7 @@
                         <li>
                             <a href="#" class="tpl-dropdown-content-message">
                                 <span class="tpl-dropdown-content-photo">
-                      <img src="assets/img/user02.png" alt=""></img> </span>
+                      <img src="assets/img/user02.png" alt=""> </span>
                                 <span class="tpl-dropdown-content-subject">
                       <span class="tpl-dropdown-content-from"> 禁言小张 </span>
                                 <span class="tpl-dropdown-content-time">10分钟前 </span>
@@ -74,7 +75,7 @@
                             </a>
                             <a href="#" class="tpl-dropdown-content-message">
                                 <span class="tpl-dropdown-content-photo">
-                      <img src="assets/img/user03.png" alt=""></img> </span>
+                      <img src="assets/img/user03.png" alt=""> </span>
                                 <span class="tpl-dropdown-content-subject">
                       <span class="tpl-dropdown-content-from"> Steam </span>
                                 <span class="tpl-dropdown-content-time">18分钟前</span>
@@ -85,9 +86,9 @@
 
                     </ul>
                 </li>
-                <li class="am-dropdown data-am-dropdown data-am-dropdown-toggle" >
+                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                     <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                        <span class="am-icon-calendar"></span> 进度 <span class="am-badge tpl-badge-primary am-round">4</span>
+                        <span class="am-icon-calendar"></span> 进度 <span class="am-badge tpl-badge-primary am-round">4</span></span>
                     </a>
                     <ul class="am-dropdown-content tpl-dropdown-content">
                         <li class="tpl-dropdown-content-external">
@@ -130,9 +131,9 @@
                 </li>
                 <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen" class="tpl-header-list-link"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
 
-                <li class="am-dropdown data-am-dropdown data-am-dropdown-toggle" >
+                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                     <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                        <span class="tpl-header-list-user-nick">禁言小张</span><span class="tpl-header-list-user-ico"> <img src="assets/img/user01.png"></img></span>
+                        <span class="tpl-header-list-user-nick">禁言小张</span><span class="tpl-header-list-user-ico"> <img src="assets/img/user01.png"></span>
                     </a>
                     <ul class="am-dropdown-content">
                         <li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>
@@ -195,14 +196,14 @@
                                     <span>图片表格</span>
                                     <i class="tpl-left-nav-content tpl-badge-success">
                18
-             </i></a>
+             </i>
 
                                     <a href="form-news.html">
                                         <i class="am-icon-angle-right"></i>
                                         <span>消息列表</span>
                                         <i class="tpl-left-nav-content tpl-badge-primary">
                5
-             </i></a>
+             </i>
 
 
                                         <a href="form-news-list.html">
@@ -396,7 +397,7 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <img src="assets/img/user01.png" alt="" class="user-pic" />
+                                            <img src="assets/img/user01.png" alt="" class="user-pic">
                                             <a class="user-name" href="###">禁言小张</a>
                                         </td>
                                         <td>￥3213</td>
@@ -405,7 +406,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="assets/img/user02.png" alt="" class="user-pic" />
+                                            <img src="assets/img/user02.png" alt="" class="user-pic">
                                             <a class="user-name" href="###">Alex.</a>
                                         </td>
                                         <td>￥2635</td>
@@ -414,7 +415,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="assets/img/user03.png" alt="" class="user-pic" />
+                                            <img src="assets/img/user03.png" alt="" class="user-pic">
                                             <a class="user-name" href="###">Tinker404</a>
                                         </td>
                                         <td>￥1267</td>
@@ -423,7 +424,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="assets/img/user04.png" alt="" class="user-pic" />
+                                            <img src="assets/img/user04.png" alt="" class="user-pic">
                                             <a class="user-name" href="###">Arron.y</a>
                                         </td>
                                         <td>￥657</td>
@@ -432,7 +433,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="assets/img/user05.png" alt="" class="user-pic" />
+                                            <img src="assets/img/user05.png" alt="" class="user-pic">
                                             <a class="user-name" href="###">Yves</a>
                                         </td>
                                         <td>￥3907</td>
@@ -441,7 +442,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="assets/img/user06.png" alt="" class="user-pic" />
+                                            <img src="assets/img/user06.png" alt="" class="user-pic">
                                             <a class="user-name" href="###">小黄鸡</a>
                                         </td>
                                         <td>￥900</td>
@@ -469,7 +470,7 @@
                                 <div class="portlet-input input-small input-inline">
                                     <div class="input-icon right">
                                         <i class="am-icon-search"></i>
-                                        <input type="text" class="form-control form-control-solid" placeholder="搜索..." /> </div>
+                                        <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
                                 </div>
                             </div>
                         </div>
@@ -478,8 +479,8 @@
                                 <ul class="tpl-task-list">
                                     <li>
                                         <div class="task-checkbox">
-                                            <input type="hidden" value="1" name="test" />
-                                            <input type="checkbox" class="liChild" value="2" name="test" /> </div>
+                                            <input type="hidden" value="1" name="test">
+                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
                                         <div class="task-title">
                                             <span class="task-title-sp"> Amaze UI Icon 组件目前使用了 Font Awesome </span>
                                             <span class="label label-sm label-success">技术部</span>
@@ -488,8 +489,8 @@
                                         </span>
                                         </div>
                                         <div class="task-config">
-                                            <div class="am-dropdown tpl-task-list-dropdown data-am-dropdown" >
-                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover data-am-dropdown-toggle" >
+                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
+                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
                                                     <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
                                                 </a>
                                                 <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
@@ -514,16 +515,16 @@
 
                                     <li>
                                         <div class="task-checkbox">
-                                            <input type="hidden" value="1" name="test" />
-                                            <input type="checkbox" class="liChild" value="2" name="test" /> </div>
+                                            <input type="hidden" value="1" name="test">
+                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
                                         <div class="task-title">
                                             <span class="task-title-sp"> 在 data-am-dropdown 里指定要适应到的元素，下拉内容的宽度会设置为该元素的宽度。当然可以直接在 CSS 里设置下拉内容的宽度。 </span>
                                             <span class="label label-sm label-danger">运营</span>
 
                                         </div>
                                         <div class="task-config">
-                                            <div class="am-dropdown tpl-task-list-dropdown data-am-dropdown" >
-                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover data-am-dropdown-toggle"  >
+                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
+                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
                                                     <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
                                                 </a>
                                                 <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
@@ -548,16 +549,16 @@
 
                                     <li>
                                         <div class="task-checkbox">
-                                            <input type="hidden" value="1" name="test" />
-                                            <input type="checkbox" class="liChild" value="2" name="test" /> </div>
+                                            <input type="hidden" value="1" name="test">
+                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
                                         <div class="task-title">
                                             <span class="task-title-sp"> 使用 LESS： 通过设置变量 @fa-font-path 覆盖默认的值，如 @fa-font-path: "../fonts";。这个变量定义在 icon.less 里。 </span>
                                             <span class="label label-sm label-warning">市场部</span>
 
                                         </div>
                                         <div class="task-config">
-                                            <div class="am-dropdown tpl-task-list-dropdown data-am-dropdown" >
-                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover data-am-dropdown-toggle" >
+                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
+                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
                                                     <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
                                                 </a>
                                                 <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
@@ -580,6 +581,213 @@
                                         </div>
                                     </li>
 
+                                    <li>
+                                        <div class="task-checkbox">
+                                            <input type="hidden" value="1" name="test">
+                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
+                                        <div class="task-title">
+                                            <span class="task-title-sp"> 添加 .am-btn-group-justify class 让按钮组里的按钮平均分布，填满容器宽度。 </span>
+                                            <span class="label label-sm label-default">已废弃</span>
+
+                                        </div>
+                                        <div class="task-config">
+                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
+                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
+                                                    <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
+                                                </a>
+                                                <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-check"></i> 保存 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-pencil"></i> 编辑 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-trash-o"></i> 删除 </a>
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="task-checkbox">
+                                            <input type="hidden" value="1" name="test">
+                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
+                                        <div class="task-title">
+                                            <span class="task-title-sp"> 按照示例组织好 HTML 结构（不加 data-am-dropdown 属性），然后通过 JS 来调用。 </span>
+                                            <span class="label label-sm label-success">技术部</span>
+                                            <span class="task-bell">
+                                            <i class="am-icon-bell-o"></i>
+                                        </span>
+                                        </div>
+                                        <div class="task-config">
+                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
+                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
+                                                    <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
+                                                </a>
+                                                <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-check"></i> 保存 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-pencil"></i> 编辑 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-trash-o"></i> 删除 </a>
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="task-checkbox">
+                                            <input type="hidden" value="1" name="test">
+                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
+                                        <div class="task-title">
+                                            <span class="task-title-sp"> 添加 .am-btn-group-justify class 让按钮组里的按钮平均分布，填满容器宽度。 </span>
+                                            <span class="label label-sm label-default">已废弃</span>
+
+                                        </div>
+                                        <div class="task-config">
+                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
+                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
+                                                    <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
+                                                </a>
+                                                <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-check"></i> 保存 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-pencil"></i> 编辑 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-trash-o"></i> 删除 </a>
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="task-checkbox">
+                                            <input type="hidden" value="1" name="test">
+                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
+                                        <div class="task-title">
+                                            <span class="task-title-sp"> 使用 LESS： 通过设置变量 @fa-font-path 覆盖默认的值，如 @fa-font-path: "../fonts";。这个变量定义在 icon.less 里。 </span>
+                                            <span class="label label-sm label-warning">市场部</span>
+
+                                        </div>
+                                        <div class="task-config">
+                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
+                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
+                                                    <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
+                                                </a>
+                                                <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-check"></i> 保存 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-pencil"></i> 编辑 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-trash-o"></i> 删除 </a>
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="task-checkbox">
+                                            <input type="hidden" value="1" name="test">
+                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
+                                        <div class="task-title">
+                                            <span class="task-title-sp"> 添加 .am-btn-group-justify class 让按钮组里的按钮平均分布，填满容器宽度。 </span>
+                                            <span class="label label-sm label-default">已废弃</span>
+
+                                        </div>
+                                        <div class="task-config">
+                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
+                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
+                                                    <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
+                                                </a>
+                                                <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-check"></i> 保存 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-pencil"></i> 编辑 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-trash-o"></i> 删除 </a>
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="task-checkbox">
+                                            <input type="hidden" value="1" name="test">
+                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
+                                        <div class="task-title">
+                                            <span class="task-title-sp"> 按照示例组织好 HTML 结构（不加 data-am-dropdown 属性），然后通过 JS 来调用。 </span>
+                                            <span class="label label-sm label-success">技术部</span>
+                                            <span class="task-bell">
+                                            <i class="am-icon-bell-o"></i>
+                                        </span>
+                                        </div>
+                                        <div class="task-config">
+                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
+                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
+                                                    <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
+                                                </a>
+                                                <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-check"></i> 保存 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-pencil"></i> 编辑 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <i class="am-icon-trash-o"></i> 删除 </a>
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -594,7 +802,7 @@
 
                         </div>
 
-                        <div class="am-tabs tpl-index-tabs data-am-tabs" >
+                        <div class="am-tabs tpl-index-tabs" data-am-tabs>
                             <ul class="am-tabs-nav am-nav am-nav-tabs">
                                 <li class="am-active"><a href="#tab1">进行中</a></li>
                                 <li><a href="#tab2">已完成</a></li>

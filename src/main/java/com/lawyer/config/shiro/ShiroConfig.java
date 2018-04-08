@@ -19,7 +19,7 @@ import com.lawyer.config.redis.MyRedisProperties;
 
 import lombok.extern.slf4j.Slf4j;
 
-@Configuration
+//@Configuration
 @Slf4j
 public class ShiroConfig {
 
@@ -61,7 +61,7 @@ public class ShiroConfig {
         shiroFilterFactoryBean.setLoginUrl("/toLogin");
 //		 shiroFilterFactoryBean.setLoginUrl("/index");
         // 登录成功后要跳转的链接
-        shiroFilterFactoryBean.setSuccessUrl("/main");
+        shiroFilterFactoryBean.setSuccessUrl("/index");
       //未授权界面;
         shiroFilterFactoryBean.setUnauthorizedUrl("/unauthor");
 
