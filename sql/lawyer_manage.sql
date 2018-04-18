@@ -4,13 +4,13 @@ Navicat MySQL Data Transfer
 Source Server         : 本地
 Source Server Version : 50631
 Source Host           : localhost:3306
-Source Database       : lawyerdb
+Source Database       : lawyer_manage
 
 Target Server Type    : MYSQL
 Target Server Version : 50631
 File Encoding         : 65001
 
-Date: 2018-04-10 16:30:48
+Date: 2018-04-18 20:13:52
 */
 
 SET FOREIGN_KEY_CHECKS=0;
